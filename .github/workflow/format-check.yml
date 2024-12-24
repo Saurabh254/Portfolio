@@ -27,4 +27,3 @@ jobs:
       # Check formatting
       - name: Run Prettier
         run: npm run format:check
-
