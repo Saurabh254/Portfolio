@@ -1,15 +1,22 @@
 <div class="px-8 flex h-full gap-8 justify-center items-center">
-  <div class="flex items-center justify-center">
+  <div
+    class="flex items-center justify-evenly md:gap-16 md:flex-row sm:flex-col"
+  >
     <div
-      class=" h-[600px] mt-8 ring-2 ring-green-800 outline-1 rounded-lg outline-transparent overflow-clip"
+      class="  mt-8 ring-2 ring-green-800 outline-1 rounded-lg outline-transparent overflow-clip"
     >
-      <img class="h-full rounded-lg p-1" src="/saurabh.jpg" alt="" srcset="" />
+      <img
+        class="max-h-[60vh] rounded-lg p-1 min-w-[300px]"
+        src="/saurabh.jpg"
+        alt=""
+        srcset=""
+      />
     </div>
     <div class="flex flex-col max-w-screen-md">
-      <span class="text-xl mt-8"
+      <span class="text-2xl mt-8"
         >Hello,<br /> Myself
         <span class="text-green-800 font-semibold">Saurabh Vishwakarma</span>
-        <br /> A Passionate developer and a full stack developer.
+        <br /> A Passionate Full Stack Engineer.
       </span>
 
       <span class="mt-8"
