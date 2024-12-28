@@ -2,11 +2,12 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 import Header from '../components/Header.svelte'
 import Home from '../components/Home.svelte'
+import 'remixicon/fonts/remixicon.css'
 ---
 
 <BaseLayout>
-  <Header />
-  <Home />
+  <div class="lg:border-x-2 lg:border-gray-200 h-full lg:mx-24">
+    <Header client:only />
+    <Home />
+  </div>
 </BaseLayout>
-
-<style></style>
