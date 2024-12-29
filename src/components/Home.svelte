@@ -2,7 +2,7 @@
 </script>
 
 <div
-  class="mt-4 w-full h-full flex items-center justify-center mx-8 text-[#676767]"
+  class="mt-4 w-full h-full flex items-center relative justify-center mx-8 text-[#676767]"
 >
   <div class="flex w-[80%]">
     <!-- info section -->

@@ -32,9 +32,16 @@
 
     <!-- work exp nav -->
     <a href="/">
+      <div class="flex items-center justify-center gap-2 font-semibold">
+        <img src="/work.svg" alt="ok" />
+        <span> Home </span>
+      </div>
+    </a>
+    <!-- Home btn -->
+    <a href="/">
       <div class="flex items-center justify-center gap-2">
         <img src="/work.svg" alt="ok" />
-        <span> Work Experience </span>
+        <span> Projects </span>
       </div>
     </a>
 
