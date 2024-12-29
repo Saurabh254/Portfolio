@@ -33,7 +33,7 @@
     <!-- work exp nav -->
     <a href="/">
       <div class="flex items-center justify-center gap-2 font-semibold">
-        <img src="/work.svg" alt="ok" />
+        <img src="/Home.svg" alt="ok" />
         <span> Home </span>
       </div>
     </a>
@@ -55,19 +55,19 @@
 
     <!-- Button to toggle the drawer -->
   </div>
-  <div class="flex items-center absolute right-0">
+  <div class="flex items-center absolute right-0 z-10">
     <button
       on:click={toggleNavBar}
       aria-label="Toggle navigation menu"
       class="block md:hidden left-0 z-10 p-4 top-0"
     >
       <i
-        class={`ri-menu-5-line text-4xl ${$isNavBarOn ? 'text-white' : 'text-black'}`}
+        class={`ri-menu-5-line z-50 text-4xl ${$isNavBarOn ? 'text-white' : 'text-black'}`}
       ></i>
     </button>
-    <!-- Drawer content that toggles visibility based on the store state -->
+
     <div
-      class={`nav-bar bg-[#000] text-white overflow-hidden absolute h-[100vh] right-0 top-0 transition-width duration-300  pt-16 ${$isNavBarOn ? 'w-48' : 'w-0'}`}
+      class={`nav-bar bg-[#000] text-white overflow-hidden absolute h-[100vh] right-0 top-0 transition-width duration-300   pt-16 ${$isNavBarOn ? 'w-48' : 'w-0'}`}
     >
       <ul
         class="[&_li]:py-2 [&>*:hover]:bg-gray-500 [&>*:hover]:cursor-pointer flex flex-col"

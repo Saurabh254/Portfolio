@@ -2,9 +2,9 @@
 </script>
 
 <div
-  class="mt-4 w-full h-full flex items-center relative justify-center mx-8 text-[#676767]"
+  class="mt-4 w-full h-full flex items-center relative justify-center mx-0 text-[#676767]"
 >
-  <div class="flex w-[80%]">
+  <div class="flex w-[80%] max-sm:flex-col-reverse flex-row">
     <!-- info section -->
     <div class=" flex flex-col justify-center">
       <div
@@ -42,7 +42,7 @@
       </div>
     </div>
     <!-- image section -->
-    <div class=" flex items-center justify-center">
+    <div class=" flex items-center justify-center z-0">
       <img
         src="/saurabh.jpg"
         class="w-[600px] rounded-xl"
