@@ -10,7 +10,7 @@
   }
 </script>
 
-<div class="flex align-bottom px-4 whitespace-nowrap relative">
+<header class="flex align-bottom px-4 whitespace-nowrap relative">
   <div
     class=" mt-8 w-full justify-center [&_img]:h-[1rem] text-[1rem] gap-8 mx-12 hidden md:flex"
   >
@@ -22,24 +22,23 @@
       </div>
     </a>
 
-    <!-- resume nav -->
-    <a href="/" class="ml-auto">
-      <div class="flex items-center justify-center gap-2">
-        <img src="/profile.svg" alt="ok" />
-        <span> Resume </span>
-      </div>
-    </a>
-
     <!-- work exp nav -->
-    <a href="/">
-      <div class="flex items-center justify-center gap-2 font-semibold">
+    <a href="/" class="ml-auto">
+      <div id="home" class="flex items-center justify-center gap-2">
         <img src="/Home.svg" alt="ok" />
         <span> Home </span>
       </div>
     </a>
-    <!-- Home btn -->
+    <!-- resume nav -->
     <a href="/">
-      <div class="flex items-center justify-center gap-2">
+      <div id="resume" class="flex items-center justify-center gap-2">
+        <img src="/profile.svg" alt="ok" />
+        <span> Resume </span>
+      </div>
+    </a>
+    <!-- Home btn -->
+    <a href="/projects">
+      <div id="project" class="flex items-center justify-center gap-2">
         <img src="/work.svg" alt="ok" />
         <span> Projects </span>
       </div>
@@ -47,7 +46,7 @@
 
     <!-- shelf nav -->
     <a href="/">
-      <div class="flex items-center justify-center gap-2">
+      <div id="shelf" class="flex items-center justify-center gap-2">
         <img src="/shelf.svg" alt="ok" />
         <span> Shelf </span>
       </div>
@@ -57,7 +56,7 @@
   </div>
   <div class="flex items-center absolute right-0 z-10">
     <button
-      on:click={toggleNavBar}
+      onclick={toggleNavBar}
       aria-label="Toggle navigation menu"
       class="block md:hidden left-0 z-10 p-4 top-0"
     >
@@ -137,4 +136,4 @@
       </ul>
     </div>
   </div>
-</div>
+</header>

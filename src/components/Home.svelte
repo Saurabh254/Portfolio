@@ -31,8 +31,8 @@
       </div>
       <div>
         <span class="w-[50%] mt-8 flex flex-wrap font-semibold text-2xl">
-          I’m a 21-year-old Software Engineer from India, passionate about
-          technology and creating innovative solutions.
+          I’m a Software Engineer from India, passionate about technology and
+          creating innovative solutions.
         </span>
       </div>
       <div class="mt-8">

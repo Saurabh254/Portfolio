@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Header from '../components/Header.svelte'
+let page = 'projects'
+---
+
+<BaseLayout>
+  <div class="w-full">
+    <Header page={page} />
+    <div class="w-full flex flex-col justify-center items-center p-4">
+      <div class="max-w-[80%] mt-12 font-semibold w-full">
+        <h1 class="text-2xl border-b-4 border-gray-300 pb-4">Projects</h1>
+        <div class="mt-8 w-full flex flex-col gap-12">
+          <div class="flex border-4 border-gray-300 rounded-xl overflow-hidden">
+            <img
+              class="w-[20%] hidden lg:block min-w-[300px] border-r-4 border-gray-300"
+              src="https://images-ext-1.discordapp.net/external/81YGUCQREhvXIVp4NG3_n9zZvr5t6PXtlotMH6nyykA/https/opengraph.githubassets.com/ead9d2d2b3bd78fc74d20fe5a29833a69b24b4174a08c42109317db2c77db6d8/Saurabh254/sonnet-sv?format=webp"
+              alt=""
+              srcset=""
+            />
+
+            <div class="w-full">
+              <div
+                class="flex flex-row max-md:flex-col px-4 py-4 items-center justify-center w-full gap-4"
+              >
+                <span class="mr-auto text-2xl md:ml-4 font-semi">Sonnet</span>
+                <ul
+                  class="flex w-full gap-4 [&>*]:bg-gray-200 [&>*]:px-4 [&>*]:py-1 [&>*]:rounded-xl [&>*]:h-fit ml-auto md:max-w-[80%] flex-wrap"
+                >
+                  <li>Python</li>
+                  <li>FastAPI</li>
+                  <li>React</li>
+                  <li>React Charts</li>
+                  <li>Redis</li>
+                  <li>PostgreSQL</li>
+                  <li class="hover:bg-gray-400 cursor-pointer">
+                    <a href="/" class="flex items-center justify-center gap-2"
+                      >View Repo <svg
+                        width="10"
+                        height="11"
+                        viewBox="0 0 10 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.24261 0.978335C9.44111 0.979247 9.63123 1.05851 9.7716 1.19888C9.91197 1.33924 9.99123 1.52936 9.99214 1.72787L9.99214 8.79894C9.99569 8.89959 9.97894 8.99993 9.94287 9.09397C9.9068 9.18801 9.85216 9.27382 9.78221 9.34628C9.71226 9.41875 9.62843 9.47638 9.53572 9.51574C9.44301 9.55511 9.34332 9.57539 9.24261 9.57539C9.14189 9.57539 9.0422 9.55511 8.94949 9.51574C8.85678 9.47638 8.77295 9.41875 8.703 9.34629C8.63305 9.27382 8.57841 9.18801 8.54234 9.09397C8.50628 8.99993 8.48952 8.89959 8.49307 8.79893L8.49307 3.53806L1.28766 10.7435C1.147 10.8841 0.956237 10.9631 0.757325 10.9631C0.558412 10.9631 0.367647 10.8841 0.226995 10.7435C0.0863432 10.6028 0.00732497 10.4121 0.00732531 10.2131C0.00732565 10.0142 0.0863429 9.82347 0.226995 9.68282L7.43241 2.4774H2.17154C1.97733 2.47055 1.79336 2.38858 1.65839 2.24876C1.52342 2.10894 1.448 1.9222 1.448 1.72787C1.448 1.53354 1.52343 1.34679 1.65839 1.20698C1.79336 1.06716 1.97733 0.98519 2.17154 0.978335L9.24261 0.978335Z"
+                          fill="black"></path>
+                      </svg></a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <span class="px-4 md:px-8 w-full block pb-4"
+                >Developed a large-scale logistics platform serving 50M+ users,
+                featuring OAuth2 security, real-time tracking, and Google Maps
+                integration. Achieved 99.9% uptime, 200ms response times, and
+                reduced delivery disputes by 60% while processing 10M+ daily
+                updates with high accuracy.</span
+              >
+            </div>
+          </div>
+
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
