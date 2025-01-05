@@ -2,11 +2,11 @@
 </script>
 
 <div
-  class="mt-4 w-full h-full flex items-center relative justify-center mx-0 text-[#676767]"
+  class="md:mt-4 w-full h-[100dvh] md:h-full flex items-center relative justify-center mx-0 text-[#676767]"
 >
-  <div class="flex w-[80%] max-sm:flex-col-reverse flex-row">
+  <div class="flex md:w-[80%] max-sm:flex-col-reverse flex-row">
     <!-- info section -->
-    <div class=" flex flex-col justify-center">
+    <div class=" flex pl-12 md:pl-0 flex-col justify-center">
       <div
         class="bg-gray-200 relative px-4 py-2 font-bold text-[#676767] justify-center rounded-lg w-fit"
       >
@@ -25,12 +25,14 @@
           />
         </svg>
       </div>
-      <div class="text-4xl flex flex-col font-bold text-[#676767] mt-8">
+      <div class="text-4xl flex flex-col font-bold text-[#676767] mt-4 md:mt-8">
         <span>Saurabh</span>
         <span>Vishwakarma</span>
       </div>
       <div>
-        <span class="w-[50%] mt-8 flex flex-wrap font-semibold text-2xl">
+        <span
+          class="md:w-[50%] mt-4 md:mt-8 flex flex-wrap font-semibold text-xl md:text-2xl"
+        >
           I’m a Software Engineer from India, passionate about technology and
           creating innovative solutions.
         </span>
@@ -42,10 +44,10 @@
       </div>
     </div>
     <!-- image section -->
-    <div class=" flex items-center justify-center z-0">
+    <div class=" flex flex-row items-center mb-8 justify-center z-0">
       <img
         src="/saurabh.jpg"
-        class="w-[600px] rounded-xl"
+        class="w-[200px] md:w-[600px] rounded-xl"
         alt="saurabh_image"
         srcset=""
       />

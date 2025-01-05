@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte'
   import { writable } from 'svelte/store'
 
   export const isNavBarOn = writable(false)
@@ -8,9 +9,12 @@
     isNavBarOn.update((value) => !value)
     console.log('NavBar State:', $isNavBarOn) // Logs current state
   }
+  onMount(() => {})
 </script>
 
-<header class="flex align-bottom px-4 whitespace-nowrap relative">
+<header
+  class=" flex align-bottom px-4 whitespace-nowrap top-0 sticky z-50 right-0 bg-secondary"
+>
   <div
     class=" mt-8 w-full justify-center [&_img]:h-[1rem] text-[1rem] gap-8 mx-12 hidden md:flex"
   >
@@ -29,6 +33,13 @@
         <span> Home </span>
       </div>
     </a>
+    <!-- about nav -->
+    <a href="/about">
+      <div id="about" class="flex items-center justify-center gap-2">
+        <img src="/about.svg" alt="ok" />
+        <span> About </span>
+      </div>
+    </a>
     <!-- resume nav -->
     <a href="/">
       <div id="resume" class="flex items-center justify-center gap-2">
@@ -44,25 +55,32 @@
       </div>
     </a>
 
-    <!-- shelf nav -->
-    <a href="/">
-      <div id="shelf" class="flex items-center justify-center gap-2">
-        <img src="/shelf.svg" alt="ok" />
-        <span> Shelf </span>
-      </div>
-    </a>
-
     <!-- Button to toggle the drawer -->
   </div>
-  <div class="flex items-center absolute right-0 z-10">
+  <div class=" flex items-center absolute right-0 z-10">
     <button
       onclick={toggleNavBar}
       aria-label="Toggle navigation menu"
       class="block md:hidden left-0 z-10 p-4 top-0"
     >
-      <i
-        class={`ri-menu-5-line z-50 text-4xl ${$isNavBarOn ? 'text-white' : 'text-black'}`}
-      ></i>
+      <span
+        class={` z-50 text-4xl ${$isNavBarOn ? 'text-white' : 'text-black'}`}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          ><path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 6h10M4 12h16M7 12h13M4 18h10"
+          /></svg
+        >
+      </span>
     </button>
 
     <div
@@ -92,11 +110,30 @@
                 stroke-width="2"
               />
             </svg>
-            Resume
+            Home
           </a>
         </li>
         <li>
-          <a href="/" class="ml-4 flex items-center gap-2">
+          <a href="/about" class="ml-4 flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 48 48"
+              ><path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+                d="M5 6h34s4 2 4 7s-4 7-4 7H5s4-2 4-7s-4-7-4-7m38 22H9s-4 2-4 7s4 7 4 7h34s-4-2-4-7s4-7 4-7"
+              /></svg
+            >
+            About
+          </a>
+        </li>
+        <li>
+          <a href="/projects" class="ml-4 flex items-center gap-2">
             <svg
               width="20"
               height="19"
@@ -108,7 +145,7 @@
                 d="M2 19C1.45 19 0.979333 18.8043 0.588 18.413C0.196667 18.0217 0.000666667 17.5507 0 17V6C0 5.45 0.196 4.97933 0.588 4.588C0.98 4.19667 1.45067 4.00067 2 4H6V2C6 1.45 6.196 0.979333 6.588 0.588C6.98 0.196667 7.45067 0.000666667 8 0H12C12.55 0 13.021 0.196 13.413 0.588C13.805 0.98 14.0007 1.45067 14 2V4H18C18.55 4 19.021 4.196 19.413 4.588C19.805 4.98 20.0007 5.45067 20 6V17C20 17.55 19.8043 18.021 19.413 18.413C19.0217 18.805 18.5507 19.0007 18 19H2ZM2 17H18V6H2V17ZM8 4H12V2H8V4Z"
                 fill="#fff"
               />
-            </svg>Work Experience
+            </svg>Projects
           </a>
         </li>
         <li>
