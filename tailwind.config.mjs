@@ -9,7 +9,6 @@ export default {
       colors: {
         secondary: '#fffef7',
       },
-
     },
   },
   plugins: [],
