@@ -41,7 +41,7 @@
       </div>
     </a>
     <!-- resume nav -->
-    <a href="/">
+    <a href="https://resume.saurabhvishwakarma.in">
       <div id="resume" class="flex items-center justify-center gap-2">
         <img src="/profile.svg" alt="ok" />
         <span> Resume </span>

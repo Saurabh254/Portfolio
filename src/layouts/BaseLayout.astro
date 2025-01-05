@@ -1,3 +1,7 @@
+---
+import { SEOMetadata } from 'astro-seo-metadata'
+---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,9 +10,56 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Saurabh | Portfolio</title>
+    <link rel="canonical" href="https://saurabhvishwakarma.in" />
+
+    <meta property="og:type" content="website" />
+
+    <meta name="apple-mobile-web-app-title" content="Saurabh Vishwakarma" />
+    <meta property="og:site_name" content="Saurabh Vishwakarma" />
+
+    <title>🚀 Saurabh Vishwakarma — Backend Engineer</title>
+
+    <meta
+      property="og:title"
+      content="🚀 Saurabh Vishwakarma — Backend Engineer"
+    />
+    <meta
+      name="twitter:title"
+      content="🚀 Saurabh Vishwakarma — Backend Engineer"
+    />
+
+    <meta
+      property="og:image:alt"
+      content="Portfolio and professional profile of Saurabh Vishwakarma, featuring software engineering projects, skills, and internship experience at different companies."
+    />
+    <meta
+      name="description"
+      property="og:description"
+      content="Hi, I'm Saurabh Vishwakarma, a Software Development Engineer Intern specializing in high-performance REST APIs, real-time systems, and scalable cloud solutions. Explore my projects and skills in Python, FastAPI, React, and more!"
+    />
+    <meta
+      name="twitter:description"
+      content="Hi, I'm Saurabh Vishwakarma, a Software Development Engineer Intern specializing in high-performance REST APIs, real-time systems, and scalable cloud solutions. Explore my projects and skills in Python, FastAPI, React, and more!"
+    />
+
+    <meta
+      property="og:image"
+      content="https://saurabhvishwakarma.in/saurabh.png"
+    />
+    <meta
+      name="twitter:image:src"
+      content="https://saurabhvishwakarma.in/saurabh.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="author" content="Saurabh Vishwakarma" />
+    <meta name="copyright" content="Saurabh Vishwakarma" />
+
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <meta name="generator" content="Astro v1.0.6" />
   </head>
   <body
-    class="lg:border-x-2 md:w-[90%] lg:border-gray-200 flex flex-col h-full lg:mx-24 xl:mx-auto relative bg-secondary"
+    class="lg:border-x-2 lg:w-[90%] lg:border-gray-200 flex flex-col h-full lg:mx-24 xl:mx-auto relative bg-secondary"
   >
     <slot />
   </body>

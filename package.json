@@ -17,6 +17,7 @@
     "@astrojs/svelte": "^7.0.2",
     "@astrojs/tailwind": "^5.1.4",
     "astro": "^5.1.1",
+    "astro-seo-metadata": "^0.6.0",
     "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1",
     "remixicon": "^4.6.0",
