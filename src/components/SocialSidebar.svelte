@@ -2,7 +2,7 @@
   class="[&_a]:bg-transparent hidden lg:flex gap-8 flex-col px-4 absolute w-[6%] h-full items-center justify-center"
 >
   <!-- Twitter -->
-  <a class="w-fit bg-red-400" href="/" aria-label="social twitter">
+  <a class="w-fit bg-red-400" href="https://x.com/saur_abh_254" aria-label="social twitter">
     <svg
       width="32"
       height="27"
@@ -17,7 +17,7 @@
     </svg>
   </a>
   <!-- Linkedin -->
-  <a class="w-fit bg-red-400" href="/" aria-label="social linkedin">
+  <a class="w-fit bg-red-400" href="https://www.linkedin.com/in/saurabh254/" aria-label="social linkedin">
     <svg
       width="30"
       height="30"
@@ -32,7 +32,7 @@
     </svg>
   </a>
   <!-- Github -->
-  <a class="w-fit bg-red-400" href="/" aria-label="social github">
+  <a class="w-fit bg-red-400" href="https://github.com/saurabh254" aria-label="social github">
     <svg
       width="32"
       height="31"
@@ -47,7 +47,7 @@
     </svg>
   </a>
   <!-- Instagram -->
-  <a class="w-fit bg-red-400" href="/" aria-label="social instagram">
+  <a class="w-fit bg-red-400" href="https://instagram.com/dereference__" aria-label="social instagram">
     <svg
       width="30"
       height="30"
