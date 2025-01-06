@@ -5,9 +5,11 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 
 <BaseLayout>
   <Header client:only />
-  <main class="flex items-center justify-center w-full lg:px-20 mt-8">
+  <main
+    class="flex flex-col items-center justify-center w-full px-4 lg:px-20 mt-8"
+  >
     <div
-      class="w-full md:flex-row items-center gap-4 p-4 md:[&>*]:px-12 [&>*]:px-4 [&>*]:py-8 flex flex-col"
+      class="w-full md:flex-row items-center gap-4 md:[&>*]:px-12 [&>*]:px-4 [&>*]:py-8 flex flex-col"
     >
       <div
         class="border-2 border-gray-200 flex md:p-4 p-0 flex-col md:max-w-1/2 w-full rounded-xl"
@@ -25,12 +27,30 @@ import BaseLayout from '../layouts/BaseLayout.astro'
       <div class="border-gray-200 border-2 rounded-xl w-full md:max-w-1/2">
         <h1 class="font-bold text-xl mb-4">Professional Summary</h1>
         <ul class="list-disc md:ml-4 flex flex-col md:gap-2">
-          <li>8+ years of experience in full-stack web development</li>
-          <li>Expertise in React, Node.js, and cloud technologies</li>
+          <li>Expertise in Python, React, Node.js, and cloud technologies</li>
           <li>Strong background in database design and optimization</li>
           <li>Experience with Agile methodologies and team leadership</li>
           <li>Passionate about clean code and software architecture</li>
         </ul>
+      </div>
+    </div>
+    <div class="border rounded-lg p-4 shadow-sm w-full mt-12">
+      <h2 class="text-lg font-bold mb-2">Work Experience</h2>
+      <div class="flex flex-col gap-2 border-l-2 border-gray-400 pl-4">
+        <div>
+          <h3 class="text-base font-semibold">
+            Software Developer Engineer Intern
+          </h3>
+          <p class="text-sm text-gray-500">Blue Mango Labs</p>
+          <p class="text-sm text-gray-400">Jan 2024 - Dec 2024</p>
+        </div>
+        <p class="text-sm text-gray-700">
+          Developed a high-performance REST API for an astrology app using
+          FastAPI, processing 100K+ daily requests with a 40% reduction in
+          response times. Designed scalable real-time solutions, integrating
+          LiveKit for video/voice calls and EMQX for messaging, supporting 10K+
+          concurrent users with sub-100ms latency.
+        </p>
       </div>
     </div>
   </main>
