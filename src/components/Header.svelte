@@ -13,7 +13,7 @@
 </script>
 
 <header
-  class=" flex align-bottom px-4 whitespace-nowrap top-0 sticky z-50 right-0 bg-secondary"
+  class=" flex align-bottom px-4 whitespace-nowrap top-0 sticky z-50 right-0 pb-4 bg-secondary"
 >
   <div
     class=" mt-8 w-full justify-center [&_img]:h-[1rem] text-[1rem] gap-8 mx-12 hidden md:flex"
