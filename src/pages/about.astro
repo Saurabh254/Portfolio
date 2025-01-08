@@ -12,7 +12,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
       class="w-full md:flex-row items-center gap-4 md:[&>*]:px-12 [&>*]:px-4 [&>*]:py-8 flex flex-col"
     >
       <div
-        class="border-2 border-gray-200 flex md:p-4 p-0 flex-col md:max-w-1/2 w-full rounded-xl  h-full"
+        class="border-2 border-gray-200 flex md:p-4 p-0 flex-col md:max-w-1/2 w-full rounded-xl h-full"
       >
         <h1 class="font-bold text-xl">Who I am</h1>
         <span class="mt-4 md:mt-10 w-full"
@@ -35,7 +35,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
       </div>
     </div>
     <div class="border rounded-lg p-4 shadow-sm w-full mt-12">
-      <h2 class="text-lg font-bold mb-2">Work Experience</h2>
+      <h2 class="text-xl font-bold mb-2 ml-4">Work Experience</h2>
       <div class="flex flex-col gap-2 border-l-2 border-gray-400 pl-4">
         <div>
           <h3 class="text-base font-semibold">
@@ -51,6 +51,131 @@ import BaseLayout from '../layouts/BaseLayout.astro'
           LiveKit for video/voice calls and EMQX for messaging, supporting 10K+
           concurrent users with sub-100ms latency.
         </p>
+      </div>
+    </div>
+
+    <!-- core skills  -->
+    <div
+      class="w-full p-6 rounded-lg mt-8 border-2 border-gray-200 mx-auto mb-8"
+    >
+      <h2 class="text-xl font-semibold mb-2">Core Skills</h2>
+      <p class="text-sm text-gray-500 mb-4">Technology | Specialize in</p>
+
+      <!-- Skill 1 -->
+      <div class="flex items-center mb-4">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+          alt="React"
+          class="h-6 w-6 mr-3"
+        />
+        <div class="w-full">
+          <div class="flex justify-between">
+            <span class="text-sm font-medium">Python</span>
+            <span class="text-sm font-medium">95%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5 mt-1">
+            <div class="bg-gray-800 h-2.5 rounded-full" style="width: 95%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center mb-4">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+          alt="React"
+          class="h-6 w-6 mr-3"
+        />
+        <div class="w-full">
+          <div class="flex justify-between">
+            <span class="text-sm font-medium">DevOps</span>
+            <span class="text-sm font-medium">70%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5 mt-1">
+            <div class="bg-gray-800 h-2.5 rounded-full" style="width: 70%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="flex items-center mb-4">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+          alt="React"
+          class="h-6 w-6 mr-3"
+        />
+        <div class="w-full">
+          <div class="flex justify-between">
+            <span class="text-sm font-medium">React</span>
+            <span class="text-sm font-medium">80%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5 mt-1">
+            <div class="bg-gray-800 h-2.5 rounded-full" style="width: 80%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+          alt="React"
+          class="h-6 w-6 mr-3"
+        />
+        <div class="w-full">
+          <div class="flex justify-between">
+            <span class="text-sm font-medium">FastAPI</span>
+            <span class="text-sm font-medium">100%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5 mt-1">
+            <div class="bg-gray-800 h-2.5 rounded-full" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill 3 -->
+    </div>
+
+    <!-- additional technology  -->
+    <div class="w-full border-2 border-gray-200 mb-12 p-6 rounded-lg shadow-md  mx-auto">
+      <h2 class="text-xl font-semibold mb-2">Additional Technology</h2>
+      <p class="text-sm text-gray-500 mb-4">
+        Other tools and frameworks I'm proficient in
+      </p>
+
+      <div class="flex flex-wrap gap-2">
+        <!-- Tag 1 -->
+        <span class="bg-gray-200 text-sm text-gray-700 py-1 px-3 rounded-full"
+          >FastAPI</span
+        >
+        <!-- Tag 2 -->
+        <span class="bg-gray-200 text-sm text-gray-700 py-1 px-3 rounded-full"
+          >PostgreSQL</span
+        >
+        <span class="bg-gray-200 text-sm text-gray-700 py-1 px-3 rounded-full"
+          >Docker</span
+        >
+        <span class="bg-gray-200 text-sm text-gray-700 py-1 px-3 rounded-full"
+          >C</span
+        >
+        <span class="bg-gray-200 text-sm text-gray-700 py-1 px-3 rounded-full"
+          >C++</span
+        >
+        <span class="bg-gray-200 text-sm text-gray-700 py-1 px-3 rounded-full"
+          >LangChain</span
+        >
+        <!-- Tag 3 -->
+        <span class="bg-gray-200 text-sm text-gray-700 py-1 px-3 rounded-full"
+          >Grafana</span
+        >
+        <!-- Tag 4 -->
+        <span class="bg-gray-200 text-sm text-gray-700 py-1 px-3 rounded-full"
+          >Git</span
+        >
+        <!-- Tag 5 -->
+        <span class="bg-gray-200 text-sm text-gray-700 py-1 px-3 rounded-full"
+          >Redis</span
+        >
       </div>
     </div>
   </main>
