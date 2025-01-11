@@ -11,7 +11,7 @@ import 'remixicon/fonts/remixicon.css'
   <div
     class="lg:border-x-2 lg:w-[90%] lg:border-gray-200 flex flex-col h-full lg:mx-24 xl:mx-auto relative bg-secondary"
   >
-    <Header client:only />
+    <Header server:defer />
     <Home />
   </div>
 </BaseLayout>

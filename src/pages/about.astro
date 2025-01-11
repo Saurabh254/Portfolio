@@ -4,7 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
 <BaseLayout>
-  <Header client:only />
+  <Header server:defer />
   <main
     class="flex bg-secondary flex-col items-center justify-center w-full px-4 lg:px-20 mt-8"
   >
@@ -17,12 +17,11 @@ import BaseLayout from '../layouts/BaseLayout.astro'
       >
         <h1 class="font-bold text-xl">Who I am</h1>
         <span class="mt-4 md:mt-10 w-full"
-          >I'm a seasoned full-stack developer with over 8 years of experience
-          in crafting robust and scalable web applications. My passion lies in
-          solving complex problems and leveraging cutting-edge technologies to
-          build innovative solutions. With a strong foundation in both front-end
-          and back-end development, I bring a holistic approach to every project
-          I undertake.</span
+          >I'm a seasoned full-stack developer has experience in crafting robust
+          and scalable web applications. My passion lies in solving complex
+          problems and leveraging cutting-edge technologies to build innovative
+          solutions. With a strong foundation in both front-end and back-end
+          development, I bring a holistic approach to every project I undertake.</span
         >
       </div>
       <div class="border-gray-200 border-2 rounded-xl w-full md:max-w-1/2">
@@ -147,7 +146,13 @@ import BaseLayout from '../layouts/BaseLayout.astro'
       <div class="flex flex-wrap gap-2">
         <!-- Tag 1 -->
         <span class="bg-gray-200 text-sm text-gray-700 py-1 px-3 rounded-full"
-          >FastAPI</span
+          >AWS</span
+        >
+        <span class="bg-gray-200 text-sm text-gray-700 py-1 px-3 rounded-full"
+          >Nginx</span
+        >
+        <span class="bg-gray-200 text-sm text-gray-700 py-1 px-3 rounded-full"
+          >Apache Kafka</span
         >
         <!-- Tag 2 -->
         <span class="bg-gray-200 text-sm text-gray-700 py-1 px-3 rounded-full"
