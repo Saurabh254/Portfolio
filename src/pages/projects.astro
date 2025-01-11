@@ -5,7 +5,7 @@ let page = 'projects'
 ---
 
 <BaseLayout>
-  <Header page={page} server:defer />
+  <Header page={page} client:only />
   <main
     class="w-full bg-secondary flex flex-col justify-center items-center p-4"
   >
