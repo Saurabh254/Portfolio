@@ -9,8 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "test": "echo \"No tests yet\" && exit 0",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src",
     "prepare": "husky install"
   },
   "dependencies": {
