@@ -1,8 +1,5 @@
 name: PageSpeed Insights Reports
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 on:
   workflow_dispatch:
   push:
@@ -12,31 +9,21 @@ on:
   schedule:
     - cron: '0 0 * * *' # Runs daily at midnight
 
-<<<<<<< Updated upstream
-=======
 permissions:
   contents: write # Ensures the workflow can commit files if needed
 
->>>>>>> Stashed changes
 jobs:
   pagespeed-metrics:
     runs-on: ubuntu-latest
     steps:
-<<<<<<< Updated upstream
-=======
       - name: Checkout repository
         uses: actions/checkout@v4
 
->>>>>>> Stashed changes
       - name: Succinct report
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.pagespeed.svg
-<<<<<<< Updated upstream
-          token: NOT_NEEDED
-=======
           token: ${{ secrets.GITHUB_TOKEN }} # Corrected token usage
->>>>>>> Stashed changes
           base: ''
           plugin_pagespeed: yes
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
@@ -46,11 +33,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.pagespeed.detailed.svg
-<<<<<<< Updated upstream
-          token: NOT_NEEDED
-=======
           token: ${{ secrets.GITHUB_TOKEN }}
->>>>>>> Stashed changes
           base: ''
           plugin_pagespeed: yes
           plugin_pagespeed_detailed: yes
@@ -61,11 +44,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.pagespeed.screenshot.svg
-<<<<<<< Updated upstream
-          token: NOT_NEEDED
-=======
           token: ${{ secrets.GITHUB_TOKEN }}
->>>>>>> Stashed changes
           base: ''
           plugin_pagespeed: yes
           plugin_pagespeed_screenshot: yes
@@ -75,19 +54,10 @@ jobs:
       - name: Succinct report with PWA
         uses: lowlighter/metrics@latest
         with:
-<<<<<<< Updated upstream
-          filename: metrics.plugin.pagespeed.svg
-          token: NOT_NEEDED
-=======
           filename: metrics.plugin.pagespeed.pwa.svg
           token: ${{ secrets.GITHUB_TOKEN }}
->>>>>>> Stashed changes
           base: ''
           plugin_pagespeed: yes
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
           plugin_pagespeed_url: https://lecoq.io
           plugin_pagespeed_pwa: yes
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
