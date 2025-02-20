@@ -54,12 +54,6 @@ import { SEOMetadata } from 'astro-seo-metadata'
 
     <meta name="author" content="Saurabh Vishwakarma" />
     <meta name="copyright" content="Saurabh Vishwakarma" />
-
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-    <meta name="generator" content="Astro v1.0.6" />
-  </head>
-  <body>
-    <slot />
     
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3KH073YH3"></script>
@@ -70,6 +64,16 @@ import { SEOMetadata } from 'astro-seo-metadata'
 
   gtag('config', 'G-K3KH073YH3');
 </script>
+
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <meta name="generator" content="Astro v1.0.6" />
+  </head>
+  
+<!-- Google tag (gtag.js) -->
+
+  <body>
+    <slot />
+    
 
   </body>
 </html>
