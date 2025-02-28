@@ -4,13 +4,13 @@ import Header from '../components/Header.svelte'
 import Home from '../components/Home.svelte'
 import SocialSideBar from '../components/SocialSidebar.svelte'
 import 'remixicon/fonts/remixicon.css'
-import About from './about.astro'
-import Projects from './projects.astro'
+import About from '../astro_comp/about.astro'
+import Projects from '../astro_comp/projects.astro'
 ---
 
 <BaseLayout class="h-[100vh]">
   <SocialSideBar />
-  <div
+  <main
     class="lg:border-x-2 lg:w-[90%] lg:border-gray-200 flex flex-col lg:mx-24 xl:mx-auto relative bg-secondary [&>*]:h-[100vh]"
     id="home"
   >
@@ -18,5 +18,5 @@ import Projects from './projects.astro'
     <Home />
     <About />
     <Projects />
-  </div>
+  </main>
 </BaseLayout>
