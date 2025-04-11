@@ -47,7 +47,7 @@
       </div>
     </a>
     <!-- resume nav -->
-    <a href="https://resume.saurabhvishwakarma.in">
+    <a href="https://drive.google.com/file/d/12Ut5BNShufCuOFjD9-J-uG8oOdiUiOBA/view?usp=drivesdk">
       <div class="flex items-center justify-center gap-2">
         <img src="/profile.svg" alt="ok" />
         <span> Resume </span>
