@@ -23,7 +23,6 @@
     "prettier-plugin-astro": "^0.14.1",
     "remixicon": "^4.6.0",
     "svelte": "^5.15.0",
-    "sveltekit-image": "^0.5.13",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.2"
   },
